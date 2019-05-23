@@ -22,6 +22,11 @@
                             <font size="3" color="white">Calificaciones</font>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a id="calificacionesCreateTag" class="nav-link" routerLink="/calificaciones/add">
+                            <font size="3" color="white">Crear Calificación</font>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </a>
@@ -140,10 +145,13 @@
     <div class="col">
         <router-outlet name="detail"></router-outlet>
     </div>
+    <br>
+    <br>
     <div class="col">
         <router-outlet name="create"></router-outlet>
     </div>
-
+    <br>
+    <br>
     <footer class="footer bg-light" >
         <div class="container pull-right" id="footer">
             <p class="navbar-text text-center pull-right ">

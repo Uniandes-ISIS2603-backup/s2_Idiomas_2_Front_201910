@@ -5,19 +5,21 @@ import { CalificacionDetail } from './calificacion-detail';
 import { Observable } from 'rxjs';
 import {environment} from '../../environments/environment';
 
-const API_URL = "../../assets/";
-const calificaciones = 'calificaciones.json';
+const API_URL = environment.apiURL;
+const API_URL2 = '../../assets/';
+const calificaciones = '/calificaciones/';
+
 @Injectable()
 export class CalificacionesService {
 
   constructor(private http : HttpClient) { 
   }
   getCalificaciones() : Observable<Calificacion[]>{
-      return this.http.get<Calificacion[]>(API_URL + calificaciones);
+      return this.http.get<Calificacion[]>(API_URL2 + 'calificaciones.json');
     }
   
   getCalificacionDetail(calificacionId) : Observable<CalificacionDetail> {
-        return this.http.get<CalificacionDetail>(API_URL + 'calificacion-' + calificacionId + '.json');
+        return this.http.get<CalificacionDetail>(API_URL2 + 'calificacion-' + calificacionId + '.json');
   }
 
     /**

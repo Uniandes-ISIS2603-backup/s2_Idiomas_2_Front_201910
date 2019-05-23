@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing/app-routing.module';
 import { ListarCalificacionesComponent } from './listar-calificaciones/listar-calificaciones.component';
 import { CalificacionesService } from './calificaciones.service';
@@ -9,7 +10,8 @@ import { CalificacionCreateComponent } from './calificacion-create/calificacion-
 @NgModule({
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   exports: [ListarCalificacionesComponent],
   declarations: [ListarCalificacionesComponent, CalificacionesDetailComponent, CalificacionCreateComponent],
