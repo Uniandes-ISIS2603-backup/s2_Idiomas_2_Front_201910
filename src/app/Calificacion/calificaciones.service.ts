@@ -5,8 +5,8 @@ import { CalificacionDetail } from './calificacion-detail';
 import { Observable } from 'rxjs';
 import {environment} from '../../environments/environment';
 
-const API_URL = environment.apiURL;
-const calificaciones = '/grades';
+const API_URL = "../../assets/";
+const calificaciones = 'calificaciones.json';
 @Injectable()
 export class CalificacionesService {
 

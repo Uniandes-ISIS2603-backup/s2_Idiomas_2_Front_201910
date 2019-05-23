@@ -181,7 +181,8 @@ const routes: Routes = [
             },
             {
                 path: 'add',
-                component: CalificacionCreateComponent
+                component: CalificacionCreateComponent,
+                outlet: 'create'
             }
         ]
     },
