@@ -4,9 +4,10 @@ import { HttpClient } from '@angular/common/http';
 import { GrupoDeInteres } from './grupodeinteres';
 import { GrupoDeInteresDetail } from './grupodeinteres-detail';
 import { Observable } from 'rxjs';
+import {environment} from '../../environments/environment';
 
-const API_URL = "../../assets/";
-const grupodeinteres = 'editorials.json';
+const API_URL = environment.apiURL;
+const grupodeinteres = '/grupoDeInteres/';
 
 /**
 * The service provider for everything related to editorials
