@@ -7,8 +7,8 @@ import { GrupoDeInteresService } from '../grupodeinteres.service';
  * The component for the list of editorials in the BookStore
  */
 @Component({ 
-  selector: 'list-editorial',
-  templateUrl: './editorial-list.component.html',
+  selector: 'grupodeinteres-list',
+  templateUrl: './grupodeinteres-list.component.html',
 })
 export class GrupoDeInteresListComponent implements OnInit {
 
