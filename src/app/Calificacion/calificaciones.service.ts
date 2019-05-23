@@ -17,10 +17,9 @@ export class CalificacionesService {
     }
   
   getCalificacionDetail(calificacionId) : Observable<CalificacionDetail> {
-        return this.http.get<CalificacionDetail>(API_URL + calificaciones + '/' + calificacionId);
+        return this.http.get<CalificacionDetail>(API_URL + 'calificacion-' + calificacionId + '.json');
   }
 
-  
     /**
     * Creates a calificacion
     * @param calificacion The new calificacion
