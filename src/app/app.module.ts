@@ -28,6 +28,8 @@ import {EstadiaModule} from './estadia/estadia.module';
 import {EncuentroModule} from './encuentro/encuentro.module';
 import {OtroModule} from './otro/otro.module';
 import {ChatModule} from './chat/chat.module';
+import {GrupoDeInteresModule} from './grupodeinteres/grupodeinteres.module';
+
 
 
 
@@ -58,6 +60,7 @@ import {ChatModule} from './chat/chat.module';
         ChatModule,
         EncuentroModule,
         OtroModule,
+        GrupoDeInteresModule,
 
         ToastrModule.forRoot({
             timeOut: 10000,

@@ -11,7 +11,7 @@ export class GrupoDeInteres {
     /**
     * The editorial's name
     */
-    name: string;
+    grupoAdmin: string;
   
 
 }

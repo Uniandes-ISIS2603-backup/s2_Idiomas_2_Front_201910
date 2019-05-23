@@ -3,11 +3,11 @@
 		<table class="table table-striped">
 			<thead class="thead-dark">
 				<tr>
-					<th>Editorial Name</th>
+					<th>Grupos Admin</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr *ngFor="let i of editorials">
+				<tr *ngFor="let i of grupos">
 					<td style="cursor: pointer;">
 						<a class="figure-caption" [routerLink] ="['/grupodeinteres', { outlets: { 'detail': [i.id] } }]" >{{i.id}}</a>
 					</td>
